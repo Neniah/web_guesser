@@ -34,14 +34,8 @@ class WebGuesser
       set_color("Red")
       "Way too high!"
     elsif guess < (secret_number - 5)
-      set_color("Red")
+      set_color("Blue")
       "Way too low!"
-    elsif guess > secret_number
-      set_color("#ffb3b3")
-      "Too high!"
-    elsif guess < secret_number
-      set_color("#ffb3b3")
-      "Too low!"
     end
   end
 end
